@@ -1,0 +1,24 @@
+{
+  "name": "LaMarrAHaynes",
+  "version": "1.0.0",
+  "description": "[Github](https://www.github.com)\r [LaMarrAHaynes](https://www.google.com)\r [Steely Dan](https://www.google.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamarrhaynes/Savvy-coders-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lamarrhaynes/Savvy-coders-portfolio/issues"
+  },
+  "homepage": "https://github.com/lamarrhaynes/Savvy-coders-portfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
