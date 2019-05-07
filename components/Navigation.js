@@ -1,4 +1,5 @@
-export default `<nav>
+export default function Content(){
+    return `<nav>
 <ul>
   <li><a href="about.html">About Me</a></li>
   <li><a href="contact.html">Contact</a></li>
@@ -16,3 +17,4 @@ export default `<nav>
     <h1>LaMarrAHaynes Portfolio</h1>
     <h2>A Web Developer</h2>
   </header> `;
+}

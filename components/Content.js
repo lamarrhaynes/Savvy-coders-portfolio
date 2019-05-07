@@ -1,6 +1,8 @@
-export default `<main>
+export default function Content(state){
+
+    return `<main>
 <section>
-  <h2>A Section Header!</h2>
+  <h2>${state.title}</h2>
   <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
     reprehenderit distinctio est aliquam rem qui saepe quisquam
@@ -62,3 +64,4 @@ export default `<main>
   </p>
 </section>
 </main>`;
+}
