@@ -4,7 +4,8 @@
   "description": "[Github](https://www.github.com)\r [LaMarrAHaynes](https://www.google.com)\r [Steely Dan](https://www.google.com)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx parcel index.html"
   },
   "repository": {
     "type": "git",
