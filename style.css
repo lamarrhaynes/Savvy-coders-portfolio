@@ -1,0 +1,21 @@
+let myArr = ["one", 2, "three", true, false, null, 'this is good result'];
+// console.log(myArr);
+
+// Arrays have 0-based indices
+// Arrays are ordered/numbered collections
+// We use BRACKET NOTATION to access specific indices of an ARRAY
+// console.log(myArr[0]);
+
+// Access the element in the last index of any ARRAY
+console.log(myArr[myArr.length - 1]);
+
+// Object Literal
+// Objects DO NOT have any set order
+// Objects are accesed by Strings using dot notation OR bracket notation
+let myObj = {
+  "someKey": "someVallue",
+  "anotherKey": 3
+}
+
+console.log(myObj.someKey);
+console.log(myObj["someKey"]);
