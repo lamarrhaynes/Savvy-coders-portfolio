@@ -1,20 +1,29 @@
-export default function Content(){
-    return `<nav>
-<ul>
-  <li><a href="about.html">About Me</a></li>
-  <li><a href="contact.html">Contact</a></li>
+Function buildNavHTML(stateLinks){
+  let linksHTML = '';
+
+  stateLinks.foreach(link => {
+    linksHTML += `<li><a href="">${link}</li>`;
+  });
+
+  return linksHTML;
+}
+
+export default (state) => `<nav>
+    <ul class="flex">
+    ${buildNavHTML(state.links.primary)}
   <li>
     Portfolio
-    <ul>
-      <li><a href="class.html">Class Showcase</a></li>
-      <li><a href="web-store.html">Web Store Hack-a-Thon</a></li>
-      <li><a href="demo.html">Demo Day Project</a></li>
+    <ul id="dropdown">
+    ${buildNavHTML(state.links.primary)}
+     
     </ul>
   </li>
 </ul>
-</nav>
+</nav>';
+
 <header>
     <h1>LaMarrAHaynes Portfolio</h1>
     <h2>A Web Developer</h2>
-  </header> `;
-}
+  </header> 
+  `
+};
