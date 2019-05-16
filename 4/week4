@@ -1,0 +1,8 @@
+let myArr = [1, 2, 3];
+
+
+let [x] = [...myArr];
+console.log(Array.isArray(x));
+console.log(typeof x);
+console.log(`x is: ${x}`);
+console.log(Array.isArray(myArr));
