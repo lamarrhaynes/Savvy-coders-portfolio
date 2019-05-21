@@ -2,7 +2,7 @@ function buildNavHTML(stateLinks){
     let linksHTML = '';
 
     stateLinks.forEach((link) => {
-        linksHTML += `<li><a href="">${link}</li>`;
+        linksHTML += `<li><a href="">${link}</a></li>`;
     });
 
     return linksHTML;
@@ -19,7 +19,7 @@ export default (state) => `<nav>
     </ul>
   </li>
 </ul>
-</nav>';
+</nav>
 
 <header>
     <h1>LaMarrAHaynes Portfolio</h1>
