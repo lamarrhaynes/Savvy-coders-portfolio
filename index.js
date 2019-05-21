@@ -4,6 +4,11 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 import * as states from './store';
 
+import Navigo from 'navigo';
+
+const router = new Navigo(window.location.origin);
+
+
 const root = document.querySelector('#root');
 
 // render receives an argument as a named parameter: 'state'
@@ -25,4 +30,9 @@ ${Footer(state)}
     });
 }
 
-render(states.Home);
+
+router
+    .on(':path', (params) => console.log('params.path'))
+    .on('/',() => render(states.Home))
+    .resolve();
+
