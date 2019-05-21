@@ -2,18 +2,7 @@
 import Navigation from './components/Navigation';
 import Content from './components/Content';
 import Footer from './components/Footer';
-
-const states = {
-    'home': {
-        'title': 'LaMarrAHaynes Savvy Code Portfolio'
-    },
-    'contact': {
-        'title': 'welcome to contact page'
-    },
-    'about': {
-        'title': 'welcome to about page'
-    }
-};
+import * as states from './store';
 
 const root = document.querySelector('#root');
 
