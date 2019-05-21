@@ -1,11 +1,11 @@
-Function buildNavHTML(stateLinks){
-  let linksHTML = '';
+function buildNavHTML(stateLinks){
+    let linksHTML = '';
 
-  stateLinks.foreach(link => {
-    linksHTML += `<li><a href="">${link}</li>`;
-  });
+    stateLinks.forEach((link) => {
+        linksHTML += `<li><a href="">${link}</li>`;
+    });
 
-  return linksHTML;
+    return linksHTML;
 }
 
 export default (state) => `<nav>
@@ -14,8 +14,8 @@ export default (state) => `<nav>
   <li>
     Portfolio
     <ul id="dropdown">
-    ${buildNavHTML(state.links.primary)}
-     
+    ${buildNavHTML(state.links.dropdown)}
+
     </ul>
   </li>
 </ul>
@@ -24,6 +24,6 @@ export default (state) => `<nav>
 <header>
     <h1>LaMarrAHaynes Portfolio</h1>
     <h2>A Web Developer</h2>
-  </header> 
+  </header>
   `
-};
+;
