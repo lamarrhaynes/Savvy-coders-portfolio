@@ -1,8 +1,6 @@
 import * as pages from '../pages';
 
-export default function Content(state){
-    return `<main>
+export default (state) => `
         ${pages[state.pageContent](state)}
 
 </main>`;
-}

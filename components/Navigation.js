@@ -2,7 +2,7 @@ function buildNavHTML(stateLinks){
     let linksHTML = '';
 
     stateLinks.forEach((link) => {
-        linksHTML += `<li><a href="">${link}</a></li>`;
+        linksHTML += `<li><a href="${link.toLowerCase()}">${link}</a></li>`;
     });
 
     return linksHTML;
@@ -25,5 +25,4 @@ export default (state) => `<nav>
     <h1>LaMarrAHaynes Portfolio</h1>
     <h2>A Web Developer</h2>
   </header>
-  `
-;
+`;
