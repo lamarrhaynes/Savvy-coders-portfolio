@@ -1,4 +1,20 @@
-export default () => `<footer style="background: red; color: red;">
-&copy; 2019 Manav Misra
-    </footer>`;
-
+export default () => `<footer class="container flex">
+     &copy; 2019 Hunter Feltes
+     <ul>
+       <li>
+         <a href="https://github.com/" target="_blank">
+           <span class="fab fa-github"></span>
+         </a>
+       </li>
+       <li>
+         <a href="" target="_blank">
+           <span class="fab fa-linkedin-in"></span>
+         </a>
+       </li>
+       <li>
+         <a href="" target="_blank">
+           <span class="fab fa-twitter"></span>
+         </a>
+       </li>
+     </ul>
+   </footer>`;

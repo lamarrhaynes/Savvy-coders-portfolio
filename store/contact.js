@@ -1,9 +1,7 @@
+import links from './Links';
 
 export default {
     'pageContent': 'Contact',
-    'title': 'LetsConnect',
-    'links': {
-        'primary': [ 'Home', 'About', 'Contact' ],
-        'dropdown': [ 'Class Project', 'Hack-a-Thon', 'Demo Day' ]
-    }
+    'title': 'Contact Me!',
+    'links': links
 };

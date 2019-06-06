@@ -1,28 +1,29 @@
+function buildIconHTML(link){
+    if(link.icon){
+        return `<span class="${link.icon}"></span>`;
+    }
+
+    return '';
+}
+
 function buildNavHTML(stateLinks){
-    let linksHTML = '';
-
-    stateLinks.forEach((link) => {
-        linksHTML += `<li><a href="${link.toLowerCase()}">${link}</a></li>`;
-    });
-
-    return linksHTML;
+    return stateLinks
+        .map(
+            (link) =>
+                `<li><a href="/${link.text.toLowerCase()}" data-navigo>${buildIconHTML(
+                    link
+                )}${link.text}</a></li>`)
+        .join(' ');
 }
 
 export default (state) => `<nav>
-    <ul class="flex">
+  <ul class="flex">
     ${buildNavHTML(state.links.primary)}
-  <li>
-    Portfolio
-    <ul id="dropdown">
-    ${buildNavHTML(state.links.dropdown)}
-
-    </ul>
-  </li>
-</ul>
-</nav>
-
-<header>
-    <h1>LaMarrAHaynes Portfolio</h1>
-    <h2>A Web Developer</h2>
-  </header>
-`;
+    <li>
+      Portfolio
+      <ul id="dropdown">
+        ${buildNavHTML(state.links.dropdown)}
+      </ul>
+    </li>
+  </ul>
+</nav>`;

@@ -1,6 +1,6 @@
-import * as pages from '../pages';
+import * as pages from './pages';
 
 export default (state) => `
-        ${pages[state.pageContent](state)}
-
-</main>`;
+ <div id="bg-container">
+   ${pages[state.pageContent](state)}
+ </div>`;
